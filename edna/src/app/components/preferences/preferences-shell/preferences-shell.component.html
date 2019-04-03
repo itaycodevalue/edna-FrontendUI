@@ -1,0 +1,10 @@
+<p-accordion (onOpen)="onTabOpen($event)">
+  <p-accordionTab
+    *ngFor="let item of menuItems"
+    class="preferences-tab"
+    header="{{ item }}"
+    [transitionOptions]="'0ms'"
+  >
+    <router-outlet></router-outlet>
+  </p-accordionTab>
+</p-accordion>
