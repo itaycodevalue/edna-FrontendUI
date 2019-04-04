@@ -2,7 +2,7 @@
   <p-accordionTab
     *ngFor="let item of menuItems"
     class="preferences-tab"
-    header="{{ item }}"
+    header="{{ item | uppercase }} "
     [transitionOptions]="'0ms'"
   >
     <router-outlet></router-outlet>

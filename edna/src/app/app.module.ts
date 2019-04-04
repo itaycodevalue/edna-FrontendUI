@@ -18,6 +18,7 @@ import { PreferencesShellComponent } from "./components/preferences/preferences-
 import { MatExpansionModule } from "@angular/material/expansion";
 import { AccordionModule } from "primeng/accordion";
 import { PreferencesGeneralComponent } from "./components/preferences/preferences-general/preferences-general.component";
+
 @NgModule({
   declarations: [
     AppComponent,
