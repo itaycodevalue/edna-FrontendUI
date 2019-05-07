@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "translation": {
+    "edna-frontend": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/translation",
+            "outputPath": "dist/edna-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,24 +78,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "translation:build"
+            "browserTarget": "edna-frontend:build"
           },
           "configurations": {
             "he": {
-              "browserTarget": "translation:build:he"
+              "browserTarget": "edna-frontend:build:he"
             },
             "en": {
-              "browserTarget": "translation:build:en"
+              "browserTarget": "edna-frontend:build:en"
             },
             "production": {
-              "browserTarget": "translation:build:production"
+              "browserTarget": "edna-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "translation:build"
+            "browserTarget": "edna-frontend:build"
           }
         },
         "test": {
@@ -134,7 +134,7 @@
         }
       }
     },
-    "translation-e2e": {
+    "edna-frontend-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -143,11 +143,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "translation:serve"
+            "devServerTarget": "edna-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "translation:serve:production"
+              "devServerTarget": "edna-frontend:serve:production"
             }
           }
         },
@@ -163,5 +163,5 @@
       }
     }
   },
-  "defaultProject": "translation"
+  "defaultProject": "edna-frontend"
 }
