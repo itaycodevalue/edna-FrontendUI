@@ -1,0 +1,14 @@
+.header {
+  background-color: #4786ed;
+  height: 6em;
+  color: white;
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+.mat-raised-button{
+  widows: 18em;
+}
+
+
